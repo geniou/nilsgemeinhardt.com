@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,500);
+
+$width: 600px;
+$space: 15px;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #08242f;
+  color: white;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#content {
+  width: $width;
+  position: relative;
+  margin: 200px auto;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0;
+  width: $width / 2 - $space;
+  text-align: right;
+  float: left;
+}
+
+section {
+  width: $width / 2 - $space;
+  padding-left: $space;
+  border-left: 1px solid white;
+  float: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    color: #c99138;
+    line-height: 2em;
+  }
+}
+
+.email {
+  margin-top: 30px;
+}
