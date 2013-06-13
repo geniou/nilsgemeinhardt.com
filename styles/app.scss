@@ -1,38 +1,88 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,500);
+@import url(http://fonts.googleapis.com/css?family=Volkhov:700);
 
-$width: 600px;
+$width: 900px;
 $space: 15px;
+
+$blue: #08242f;
+$yellow: #c99138;
+
+$gray: #e3e3e3;
+$light-gray: #f1f1f1;
 
 body {
   margin: 0;
   padding: 0;
-  background: #08242f;
-  color: white;
-  font-size: 16px;
+  background: $blue;
+  color: #3e3e3e;
+  font-size: 13px;
   font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5em;
 }
 
 #content {
-  width: $width;
+  width: $width - 60;
+  padding: 30px;
   position: relative;
-  margin: 200px auto;
+  margin: 30px auto;
   font-weight: 300;
+  background: white;
+  border-top: 25px solid $yellow;
+  box-shadow: 0 0 1px 0 black;
 }
 
 h1 {
+  font-family: 'Volkhov', serif;
   font-weight: 500;
-  font-size: 22px;
-  margin: 0;
-  width: $width / 2 - $space;
-  text-align: right;
-  float: left;
+  font-size: 24px;
+  color: $blue;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: $blue;
+  margin: 0 0 10px 0;
+  padding-top: 30px;
+  color: #000000;
 }
 
 section {
-  width: $width / 2 - $space;
-  padding-left: $space;
-  border-left: 1px solid white;
+  border-bottom: 1px solid $gray;
+  padding: 0 30px 30px 250px;
+  &:last-child {
+    border: none;
+  }
+  > h1 {
+    float: left;
+    margin-left: -250px;
+    margin-top: 0;
+    padding-top: 30px;
+  }
+}
+
+header {
+  background: $light-gray;
+  margin: -30px -30px 30px;
+  padding: 30px 30px 0;
+  border-bottom: 1px solid $gray;
+  > h1 {
+    font-size: 30px;
+  }
+  ul {
+    float: right;
+    li {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.period {
+  clear: right;
   float: right;
+  background: $light-gray;
+  padding: 3px 10px;
+  margin: 30px 0 10px 10px;
 }
 
 ul {
@@ -40,11 +90,32 @@ ul {
   padding: 0;
   li {
     list-style: none;
-    color: #c99138;
-    line-height: 2em;
+    margin-bottom: 1em;
   }
 }
 
 .email {
   margin-top: 30px;
+}
+
+ul.cloud {
+  margin-top: 30px;
+  li {
+    display: inline;
+    background: $light-gray;
+    padding: 5px 15px;
+    margin: 0 5px;
+    line-height: 2.3em;
+    &.expert {
+      font-size: 1.5em;
+      background: $blue;
+      color: white;
+    }
+    &.advanced {
+      font-size: 1.1em;
+    }
+    &.basic {
+      font-size: 0.7em;
+    }
+  }
 }

@@ -1,39 +1,91 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,500);
+@import url(http://fonts.googleapis.com/css?family=Volkhov:700);
 body {
   margin: 0;
   padding: 0;
   background: #08242f;
-  color: white;
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif; }
+  color: #3e3e3e;
+  font-size: 13px;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5em; }
 
 #content {
-  width: 600px;
+  width: 840px;
+  padding: 30px;
   position: relative;
-  margin: 200px auto;
-  font-weight: 300; }
+  margin: 30px auto;
+  font-weight: 300;
+  background: white;
+  border-top: 25px solid #c99138;
+  box-shadow: 0 0 1px 0 black; }
 
 h1 {
+  font-family: 'Volkhov', serif;
   font-weight: 500;
-  font-size: 22px;
-  margin: 0;
-  width: 285px;
-  text-align: right;
-  float: left; }
+  font-size: 24px;
+  color: #08242f; }
 
-.section {
-  width: 285px;
-  padding-left: 15px;
-  border-left: 1px solid white;
-  float: right; }
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #08242f;
+  margin: 0 0 10px 0;
+  padding-top: 30px;
+  color: #000000; }
+
+section {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0 30px 30px 250px; }
+  section:last-child {
+    border: none; }
+  section > h1 {
+    float: left;
+    margin-left: -250px;
+    margin-top: 0;
+    padding-top: 30px; }
+
+header {
+  background: #f1f1f1;
+  margin: -30px -30px 30px;
+  padding: 30px 30px 0;
+  border-bottom: 1px solid #e3e3e3; }
+  header > h1 {
+    font-size: 30px; }
+  header ul {
+    float: right; }
+    header ul li {
+      margin-bottom: 0; }
+
+.period {
+  clear: right;
+  float: right;
+  background: #f1f1f1;
+  padding: 3px 10px;
+  margin: 30px 0 10px 10px; }
 
 ul {
   margin: 0;
   padding: 0; }
   ul li {
     list-style: none;
-    color: #c99138;
-    line-height: 2em; }
+    margin-bottom: 1em; }
 
 .email {
   margin-top: 30px; }
+
+ul.cloud {
+  margin-top: 30px; }
+  ul.cloud li {
+    display: inline;
+    background: #f1f1f1;
+    padding: 5px 15px;
+    margin: 0 5px;
+    line-height: 2.3em; }
+    ul.cloud li.expert {
+      font-size: 1.5em;
+      background: #08242f;
+      color: white; }
+    ul.cloud li.advanced {
+      font-size: 1.1em; }
+    ul.cloud li.basic {
+      font-size: 0.7em; }
