@@ -20,6 +20,18 @@ body {
   line-height: 1.5em;
 }
 
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+p {
+  margin: 0;
+}
+
 #content {
   width: $width - 60;
   padding: 30px;
@@ -41,6 +53,7 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 20px;
+  line-height: 25px;
   color: $blue;
   margin: 0 0 10px 0;
   padding-top: 30px;
@@ -83,6 +96,10 @@ header {
   background: $light-gray;
   padding: 3px 10px;
   margin: 30px 0 10px 10px;
+  &.current {
+    background: $blue;
+    color: white;
+  }
 }
 
 ul {
@@ -90,32 +107,28 @@ ul {
   padding: 0;
   li {
     list-style: none;
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
   }
 }
 
-.email {
-  margin-top: 30px;
-}
-
 ul.cloud {
-  margin-top: 30px;
+  padding-top: 20px;
   li {
     display: inline;
     background: $light-gray;
     padding: 5px 15px;
-    margin: 0 5px;
+    margin: 0 4px;
     line-height: 2.3em;
     &.expert {
-      font-size: 1.5em;
+      font-size: 20px;
       background: $blue;
       color: white;
     }
     &.advanced {
-      font-size: 1.1em;
+      font-size: 15px;
     }
     &.basic {
-      font-size: 0.7em;
+      font-size: 10px;
     }
   }
 }
