@@ -19,8 +19,8 @@ p {
   margin: 0; }
 
 #content {
-  width: 890px;
-  padding: 30px;
+  width: 870px;
+  padding: 45px;
   position: relative;
   margin: 40px auto;
   font-weight: 300;
@@ -45,9 +45,10 @@ h2 {
 
 section {
   border-bottom: 1px solid #e3e3e3;
-  padding: 0 30px 30px 250px; }
+  padding: 20px 0 30px 250px; }
   section:last-child {
-    border: none; }
+    border: none;
+    padding-bottom: 0; }
   section > h1 {
     float: left;
     margin-left: -250px;
@@ -56,13 +57,14 @@ section {
 
 header {
   background: #f1f1f1;
-  margin: -30px -30px 30px;
-  padding: 30px 30px 0;
+  margin: -45px -45px 0;
+  padding: 30px 45px 20px;
   border-bottom: 1px solid #e3e3e3; }
   header > h1 {
     font-size: 30px; }
   header ul {
-    float: right; }
+    float: right;
+    text-align: right; }
     header ul li {
       margin-bottom: 0; }
 
