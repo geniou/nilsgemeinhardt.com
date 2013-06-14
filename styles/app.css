@@ -19,10 +19,10 @@ p {
   margin: 0; }
 
 #content {
-  width: 840px;
+  width: 890px;
   padding: 30px;
   position: relative;
-  margin: 30px auto;
+  margin: 40px auto;
   font-weight: 300;
   background: white;
   border-top: 25px solid #c99138;
@@ -52,7 +52,7 @@ section {
     float: left;
     margin-left: -250px;
     margin-top: 0;
-    padding-top: 30px; }
+    padding-top: 32px; }
 
 header {
   background: #f1f1f1;
@@ -84,12 +84,12 @@ ul {
     margin-bottom: 0.7em; }
 
 ul.cloud {
-  padding-top: 20px; }
+  padding-top: 19px; }
   ul.cloud li {
     display: inline;
     background: #f1f1f1;
     padding: 5px 15px;
-    margin: 0 4px;
+    margin: 0 6px;
     line-height: 2.3em; }
     ul.cloud li.expert {
       font-size: 20px;

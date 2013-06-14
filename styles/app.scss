@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,500);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:700);
 
-$width: 900px;
+$width: 950px;
 $space: 15px;
 
 $blue: #08242f;
@@ -36,7 +36,7 @@ p {
   width: $width - 60;
   padding: 30px;
   position: relative;
-  margin: 30px auto;
+  margin: 40px auto;
   font-weight: 300;
   background: white;
   border-top: 25px solid $yellow;
@@ -70,7 +70,7 @@ section {
     float: left;
     margin-left: -250px;
     margin-top: 0;
-    padding-top: 30px;
+    padding-top: 32px;
   }
 }
 
@@ -112,12 +112,12 @@ ul {
 }
 
 ul.cloud {
-  padding-top: 20px;
+  padding-top: 19px;
   li {
     display: inline;
     background: $light-gray;
     padding: 5px 15px;
-    margin: 0 4px;
+    margin: 0 6px;
     line-height: 2.3em;
     &.expert {
       font-size: 20px;
