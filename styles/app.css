@@ -13,7 +13,7 @@ a {
   color: #08242f;
   text-decoration: none; }
   a:hover {
-    color: #c99138; }
+    color: #f19138; }
 
 p {
   margin: 0; }
@@ -25,7 +25,7 @@ p {
   margin: 40px auto;
   font-weight: 300;
   background: white;
-  border-top: 25px solid #c99138;
+  border-top: 25px solid #f19138;
   box-shadow: 0 0 1px 0 black; }
 
 h1 {
@@ -58,15 +58,40 @@ section {
 header {
   background: #f1f1f1;
   margin: -45px -45px 0;
-  padding: 30px 45px 20px;
-  border-bottom: 1px solid #e3e3e3; }
+  padding: 65px 45px 10px;
+  border-bottom: 1px solid #e3e3e3;
+  position: relative; }
   header > h1 {
     font-size: 30px; }
-  header ul {
-    float: right;
-    text-align: right; }
-    header ul li {
+  header ul.contact {
+    text-align: right;
+    position: absolute;
+    bottom: 25px;
+    right: 35px; }
+    header ul.contact li {
       margin-bottom: 0; }
+      header ul.contact li.github, header ul.contact li.xing {
+        display: inline-block;
+        margin-left: 5px; }
+        header ul.contact li.github a, header ul.contact li.xing a {
+          text-indent: 100000px;
+          width: 20px;
+          height: 20px;
+          overflow: hidden;
+          display: block;
+          background: url("../images/social_sprite.png"); }
+      header ul.contact li.github a {
+        background-position: 0px -20px;
+        transition: background-position 0.5s; }
+        header ul.contact li.github a:hover {
+          background-position: 0px 0;
+          transition: background-position 0.2s; }
+      header ul.contact li.xing a {
+        background-position: -20px -20px;
+        transition: background-position 0.5s; }
+        header ul.contact li.xing a:hover {
+          background-position: -20px 0;
+          transition: background-position 0.2s; }
 
 .period {
   clear: right;
