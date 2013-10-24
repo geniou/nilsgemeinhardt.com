@@ -27,6 +27,12 @@ p {
   background: white;
   border-top: 25px solid #f19138;
   box-shadow: 0 0 1px 0 black; }
+  @media only screen and (max-width: 960px) {
+    #content {
+      margin: 0 auto;
+      width: auto;
+      border-top: 0;
+      padding: 15px; } }
 
 h1 {
   font-family: 'Volkhov', serif;
@@ -42,6 +48,9 @@ h2 {
   margin: 0 0 10px 0;
   padding-top: 30px;
   color: #000000; }
+  @media only screen and (max-width: 960px) {
+    h2 {
+      padding-top: 5px; } }
 
 section {
   border-bottom: 1px solid #e3e3e3;
@@ -54,6 +63,12 @@ section {
     margin-left: -250px;
     margin-top: 0;
     padding-top: 32px; }
+  @media only screen and (max-width: 960px) {
+    section {
+      padding-left: 0; }
+      section > h1 {
+        float: none;
+        margin-left: 0; } }
 
 header {
   background: #f1f1f1;
@@ -61,8 +76,15 @@ header {
   padding: 65px 45px 10px;
   border-bottom: 1px solid #e3e3e3;
   position: relative; }
+  @media only screen and (max-width: 960px) {
+    header {
+      padding: 10px 15px 10px;
+      margin: -15px -15px 0; } }
   header > h1 {
     font-size: 30px; }
+    @media only screen and (max-width: 960px) {
+      header > h1 {
+        font-size: 23px; } }
   header ul.contact {
     text-align: right;
     position: absolute;
@@ -92,6 +114,14 @@ header {
         header ul.contact li.xing a:hover {
           background-position: -20px 0;
           transition: background-position 0.2s; }
+    @media only screen and (max-width: 960px) {
+      header ul.contact {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        text-align: left; }
+        header ul.contact li {
+          margin: 0 5px 0 0 !important; } }
 
 .period {
   clear: right;
@@ -102,6 +132,11 @@ header {
   .period.current {
     background: #08242f;
     color: white; }
+  @media only screen and (max-width: 960px) {
+    .period {
+      float: none;
+      text-align: center;
+      margin: 30px 0 0; } }
 
 ul {
   margin: 0;
@@ -112,12 +147,19 @@ ul {
 
 ul.cloud {
   padding-top: 19px; }
+  @media only screen and (max-width: 960px) {
+    ul.cloud {
+      text-align: center; } }
   ul.cloud li {
     display: inline;
     background: #f1f1f1;
     padding: 5px 15px;
     margin: 0 6px;
     line-height: 2.3em; }
+    @media only screen and (max-width: 960px) {
+      ul.cloud li {
+        padding: 3px 5px;
+        margin: 0 3px; } }
     ul.cloud li.expert {
       font-size: 20px;
       background: #08242f;
