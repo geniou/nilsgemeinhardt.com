@@ -209,3 +209,18 @@ ul.cloud {
     }
   }
 }
+
+footer {
+  margin-top: 50px;
+  font-size: 0.8em;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    li {
+      display: inline;
+      padding-left: 10px;
+    }
+  }
+}
